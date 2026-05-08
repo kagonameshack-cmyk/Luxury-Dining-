@@ -82,6 +82,18 @@ nav.scrolled{
     transition:0.4s ease;
 }
 
+.menu-toggle.active span:nth-child(1){
+    transform:
+    rotate(45deg)
+    translateY(6px);
+}
+
+.menu-toggle.active span:nth-child(2){
+    transform:
+    rotate(-45deg)
+    translateY(-6px);
+        }
+
 /* MOBILE MENU */
 
 .mobile-menu{
