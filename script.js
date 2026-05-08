@@ -23,3 +23,29 @@ menuToggle.addEventListener("click", () => {
     menuToggle.classList.toggle("active");
 
 });
+
+
+const reveals = document.querySelectorAll(".reveal");
+
+window.addEventListener("scroll", revealSections);
+
+function revealSections(){
+
+    const triggerBottom = window.innerHeight * 0.85;
+
+    reveals.forEach(reveal => {
+
+        const revealTop =
+        reveal.getBoundingClientRect().top;
+
+        if(revealTop < triggerBottom){
+
+            reveal.classList.add("active");
+
+        }
+
+    });
+
+}
+
+revealSections();
