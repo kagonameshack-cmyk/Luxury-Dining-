@@ -304,15 +304,7 @@ nav.scrolled{
         flex-direction:column;
         align-items:flex-start;
     }
-
-    .parallax-section{
-    background-attachment:scroll;
-    height:65vh;
-}
-
-.parallax-content h2{
-    font-size:3rem;
-}
+    
             }
 
 /* EXPERIENCE SECTION */
