@@ -67,7 +67,7 @@ nav.scrolled{
     display:none;
 
     flex-direction:column;
-    gap:8px;
+    gap:6px;
 
     cursor:pointer;
     z-index:1200;
