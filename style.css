@@ -213,3 +213,43 @@ nav.scrolled{
     background:#C6A46C;
     color:#0B0B0B;
   }
+
+/* RESPONSIVE DESIGN */
+
+@media(max-width:900px){
+
+    .menu-toggle{
+        display:flex;
+    }
+
+    .nav-links{
+        display:none;
+    }
+
+    .hero h1{
+        font-size:4rem;
+    }
+
+}
+
+@media(max-width:600px){
+
+    nav{
+        padding:24px 6%;
+    }
+
+    .hero h1{
+        font-size:3rem;
+        line-height:1.1;
+    }
+
+    .hero p{
+        font-size:0.95rem;
+        line-height:1.8;
+    }
+
+    .hero-btn{
+        padding:16px 32px;
+    }
+
+            }
