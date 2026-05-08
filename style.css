@@ -305,6 +305,14 @@ nav.scrolled{
         align-items:flex-start;
     }
 
+    .parallax-section{
+    background-attachment:scroll;
+    height:65vh;
+}
+
+.parallax-content h2{
+    font-size:3rem;
+}
             }
 
 /* EXPERIENCE SECTION */
@@ -402,6 +410,71 @@ nav.scrolled{
 
     letter-spacing:1px;
 }
+
+/* PARALLAX SECTION */
+
+.parallax-section{
+    position:relative;
+
+    height:80vh;
+
+    background:
+    url('images/hero.jpg');
+
+    background-size:cover;
+    background-position:center;
+
+    background-attachment:fixed;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    overflow:hidden;
+}
+
+.parallax-overlay{
+    position:absolute;
+    inset:0;
+
+    background:
+    linear-gradient(
+        to bottom,
+        rgba(0,0,0,0.65),
+        rgba(0,0,0,0.82)
+    );
+}
+
+.parallax-content{
+    position:relative;
+    z-index:2;
+
+    text-align:center;
+
+    width:90%;
+    max-width:900px;
+}
+
+.parallax-content h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:5rem;
+    font-weight:300;
+
+    line-height:1.1;
+
+    margin-bottom:30px;
+}
+
+.parallax-content p{
+    color:#D3D3D3;
+
+    max-width:700px;
+
+    margin:auto;
+
+    line-height:2;
+             }
 
 /* RESERVATION SECTION */
 
