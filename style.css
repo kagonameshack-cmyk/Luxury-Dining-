@@ -63,11 +63,19 @@ nav.scrolled{
 
 /* MENU TOGGLE */
 
+/* MENU TOGGLE */
+
 .menu-toggle{
+    display:none;
+
     position:relative;
 
     width:32px;
     height:20px;
+
+    cursor:pointer;
+
+    z-index:1200;
 }
 
 .menu-toggle span{
@@ -97,7 +105,7 @@ nav.scrolled{
 .menu-toggle.active span:nth-child(2){
     bottom:9px;
     transform:rotate(-45deg);
-        }
+    }
 
 /* MOBILE MENU */
 
@@ -269,7 +277,35 @@ nav.scrolled{
         padding:16px 32px;
     }
 
+    .experience,
+    .reservation{
+        padding:100px 6%;
     }
+
+    .showcase{
+        padding:0 6% 100px;
+    }
+
+    .experience h2,
+    .reservation h2{
+        font-size:3rem;
+    }
+
+    .card{
+        height:420px;
+    }
+
+    .card-content h3{
+        font-size:1.8rem;
+    }
+
+    footer{
+        padding:30px 6%;
+        flex-direction:column;
+        align-items:flex-start;
+    }
+
+            }
 
 /* EXPERIENCE SECTION */
 
