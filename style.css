@@ -254,7 +254,7 @@ nav.scrolled{
 
     }
 
-.experience,
+    .experience,
 .reservation{
     padding:100px 6%;
 }
@@ -280,7 +280,7 @@ footer{
     padding:30px 6%;
     flex-direction:column;
     align-items:flex-start;
-    }
+}
 
 /* EXPERIENCE SECTION */
 
