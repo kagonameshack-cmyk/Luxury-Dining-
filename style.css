@@ -254,34 +254,6 @@ nav.scrolled{
 
     }
 
-    .experience,
-.reservation{
-    padding:100px 6%;
-}
-
-.showcase{
-    padding:0 6% 100px;
-}
-
-.experience h2,
-.reservation h2{
-    font-size:3rem;
-}
-
-.card{
-    height:420px;
-}
-
-.card-content h3{
-    font-size:1.8rem;
-}
-
-footer{
-    padding:30px 6%;
-    flex-direction:column;
-    align-items:flex-start;
-}
-
 /* EXPERIENCE SECTION */
 
 .experience{
