@@ -604,3 +604,147 @@ footer p{
     opacity:1;
     transform:translateY(0);
     }
+
+/* RESERVATION MODAL */
+
+.reservation-modal{
+    position:fixed;
+
+    inset:0;
+
+    background:rgba(0,0,0,0.78);
+
+    backdrop-filter:blur(18px);
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    opacity:0;
+    visibility:hidden;
+
+    transition:0.5s ease;
+
+    z-index:2000;
+}
+
+.reservation-modal.active{
+    opacity:1;
+    visibility:visible;
+}
+
+.reservation-box{
+    width:90%;
+    max-width:600px;
+
+    background:#111111;
+
+    border:1px solid rgba(198,164,108,0.18);
+
+    padding:60px 45px;
+
+    position:relative;
+
+    transform:translateY(40px);
+
+    transition:0.5s ease;
+}
+
+.reservation-modal.active .reservation-box{
+    transform:translateY(0);
+}
+
+.close-modal{
+    position:absolute;
+
+    top:25px;
+    right:25px;
+
+    font-size:2rem;
+
+    cursor:pointer;
+
+    color:#888;
+
+    transition:0.4s ease;
+}
+
+.close-modal:hover{
+    color:#C6A46C;
+}
+
+.reservation-box h2{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:3rem;
+    font-weight:300;
+
+    margin-bottom:20px;
+}
+
+.reservation-box p{
+    color:#A8A8A8;
+
+    line-height:1.8;
+
+    margin-bottom:40px;
+}
+
+.reservation-box form{
+    display:flex;
+    flex-direction:column;
+
+    gap:20px;
+}
+
+.reservation-box input,
+.reservation-box textarea{
+    width:100%;
+
+    background:#0B0B0B;
+
+    border:1px solid rgba(255,255,255,0.08);
+
+    padding:18px 20px;
+
+    color:#F5F1E8;
+
+    font-family:'Inter',sans-serif;
+
+    outline:none;
+
+    transition:0.4s ease;
+}
+
+.reservation-box textarea{
+    height:140px;
+
+    resize:none;
+}
+
+.reservation-box input:focus,
+.reservation-box textarea:focus{
+    border-color:#C6A46C;
+}
+
+.reservation-box button{
+    margin-top:10px;
+
+    padding:18px;
+
+    background:#C6A46C;
+
+    border:none;
+
+    color:#0B0B0B;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:0.4s ease;
+}
+
+.reservation-box button:hover{
+    opacity:0.85;
+    }
