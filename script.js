@@ -102,3 +102,36 @@ reservationModal.addEventListener("click", (e) => {
     }
 
 });
+
+
+const reservationForm =
+document.getElementById("reservationForm");
+
+const successMessage =
+document.getElementById("successMessage");
+
+const reservationBox =
+document.querySelector(".reservation-box");
+
+const closeSuccess =
+document.getElementById("closeSuccess");
+
+reservationForm.addEventListener("submit", (e) => {
+
+    e.preventDefault();
+
+    reservationForm.style.display = "none";
+
+    successMessage.classList.add("active");
+
+});
+
+closeSuccess.addEventListener("click", () => {
+
+    reservationModal.classList.remove("active");
+
+    successMessage.classList.remove("active");
+
+    reservationForm.style.display = "flex";
+
+});
