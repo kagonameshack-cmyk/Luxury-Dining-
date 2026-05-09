@@ -64,3 +64,41 @@ mobileLinks.forEach(link => {
     });
 
 });
+
+
+const reservationModal =
+document.getElementById("reservationModal");
+
+const openReservationBtns =
+document.querySelectorAll(".openReservation");
+
+const closeModal =
+document.getElementById("closeModal");
+
+openReservationBtns.forEach(button => {
+
+    button.addEventListener("click", (e) => {
+
+        e.preventDefault();
+
+        reservationModal.classList.add("active");
+
+    });
+
+});
+
+closeModal.addEventListener("click", () => {
+
+    reservationModal.classList.remove("active");
+
+});
+
+reservationModal.addEventListener("click", (e) => {
+
+    if(e.target === reservationModal){
+
+        reservationModal.classList.remove("active");
+
+    }
+
+});
