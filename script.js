@@ -49,3 +49,18 @@ function revealSections(){
 }
 
 revealSections();
+
+
+const mobileLinks =
+document.querySelectorAll(".mobile-menu a");
+
+mobileLinks.forEach(link => {
+
+    link.addEventListener("click", () => {
+
+        mobileMenu.classList.remove("active");
+        menuToggle.classList.remove("active");
+
+    });
+
+});
