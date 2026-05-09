@@ -401,6 +401,8 @@ nav.scrolled{
     cursor:pointer;
 
     background:#111;
+
+    isolation:isolate;
 }
 
 .card img{
@@ -409,13 +411,27 @@ nav.scrolled{
 
     object-fit:cover;
 
-    transition:1.2s ease;
+    transform:scale(1.02);
+
+    transition:
+    transform 2.4s cubic-bezier(0.16,1,0.3,1),
+    filter 1.2s ease;
+
+    filter:
+    brightness(0.88)
+    contrast(1.05)
+    saturate(1.02);
 }
 
 .card:hover img{
     transform:
-    scale(1.08)
-    rotate(0.5deg);
+    scale(1.10)
+    rotate(0.6deg);
+
+    filter:
+    brightness(1)
+    contrast(1.08)
+    saturate(1.08);
 }
 
 .card-content{
@@ -443,6 +459,18 @@ nav.scrolled{
     font-weight:300;
 
     letter-spacing:1px;
+
+    transform:translateY(15px);
+
+opacity:0.88;
+
+transition:0.8s ease;
+}
+
+.card:hover .card-content h3{
+    transform:translateY(0);
+
+    opacity:1;
 }
 
 .card::after{
@@ -465,6 +493,36 @@ nav.scrolled{
 
 .card:hover::after{
     opacity:1;
+}
+
+.card::before{
+    content:"";
+
+    position:absolute;
+
+    top:0;
+    left:-120%;
+
+    width:60%;
+    height:100%;
+
+    background:
+    linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.08),
+        transparent
+    );
+
+    transform:skewX(-20deg);
+
+    transition:1.4s ease;
+
+    z-index:2;
+}
+
+.card:hover::before{
+    left:140%;
 }
 
 /* PARALLAX SECTION */
