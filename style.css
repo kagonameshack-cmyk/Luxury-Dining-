@@ -350,17 +350,17 @@ nav.scrolled{
 /* EXPERIENCE SECTION */
 
 .experience{
-    padding:140px 8%;
+    padding:180px 8% 140px;
     background:#0B0B0B;
 }
 
 .experience-text{
-    max-width:850px;
+    max-width:1000px;
 }
 
 .experience h2{
     font-family:'Cormorant Garamond',serif;
-    font-size:4.5rem;
+    font-size:5.5rem;
     font-weight:300;
     line-height:1.1;
 
@@ -545,7 +545,7 @@ nav.scrolled{
 .reservation h2{
     font-family:'Cormorant Garamond',serif;
 
-    font-size:4.5rem;
+    font-size:5.5rem;
     font-weight:300;
 
     margin-bottom:30px;
@@ -747,4 +747,36 @@ footer p{
 
 .reservation-box button:hover{
     opacity:0.85;
+    }
+
+/* CINEMATIC SECTION DIVIDERS */
+
+section{
+    position:relative;
+}
+
+section::after{
+    content:"";
+
+    position:absolute;
+
+    bottom:0;
+    left:50%;
+
+    transform:translateX(-50%);
+
+    width:120px;
+    height:1px;
+
+    background:
+    linear-gradient(
+        to right,
+        transparent,
+        rgba(198,164,108,0.4),
+        transparent
+    );
+    }
+
+footer::after{
+    display:none;
     }
