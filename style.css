@@ -647,6 +647,18 @@ footer p{
     letter-spacing:1px;
 }
 
+footer a{
+    color:#C6A46C;
+
+    text-decoration:none;
+
+    transition:0.4s ease;
+}
+
+footer a:hover{
+    opacity:0.7;
+}
+
 /* SCROLL REVEAL ANIMATIONS */
 
 .reveal{
