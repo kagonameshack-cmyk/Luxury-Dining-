@@ -885,3 +885,89 @@ footer::after{
     }
 
 }
+
+/* SUCCESS MESSAGE */
+
+.success-message{
+    display:none;
+
+    text-align:center;
+
+    animation:fadeLuxury 1s ease;
+}
+
+.success-message.active{
+    display:block;
+}
+
+.success-icon{
+    width:90px;
+    height:90px;
+
+    border:1px solid rgba(198,164,108,0.35);
+
+    border-radius:50%;
+
+    display:flex;
+    align-items:center;
+    justify-content:center;
+
+    margin:0 auto 35px;
+
+    color:#C6A46C;
+
+    font-size:2rem;
+}
+
+.success-message h3{
+    font-family:'Cormorant Garamond',serif;
+
+    font-size:3rem;
+    font-weight:300;
+
+    margin-bottom:25px;
+}
+
+.success-message p{
+    color:#A8A8A8;
+
+    line-height:2;
+
+    max-width:500px;
+
+    margin:0 auto 40px;
+}
+
+.success-message button{
+    padding:18px 34px;
+
+    background:#C6A46C;
+
+    border:none;
+
+    color:#0B0B0B;
+
+    letter-spacing:3px;
+
+    cursor:pointer;
+
+    transition:0.4s ease;
+}
+
+.success-message button:hover{
+    opacity:0.85;
+}
+
+@keyframes fadeLuxury{
+
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
